@@ -1,0 +1,19 @@
+# 1 ---- Deny access to any folder ----
+IndexIgnore *
+# 2 ---- Redirect users if they try to access pages
+ErrorDocument 404 /index.php
+
+# 3 ---- change php extension ----
+Options +MultiViews
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+#RewriteRule ^([a-z]+)\/?$ $1.php [NC,L]
+
+<Files ~ "^.*\.([Hh][Tt]|[Ii][Nn][Cc])">
+Order allow,deny
+Deny from all
+Satisfy All
+</Files>

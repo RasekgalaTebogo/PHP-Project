@@ -1,0 +1,184 @@
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+	min-height:100%;
+	background:#000222;
+	
+}
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+#header {
+	background:#ededed;
+	padding:10px;
+}
+#content {
+	padding-bottom:100px; /* Height of the footer element */
+	
+}
+#footer {
+	background:#ecf2f5;
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#content div{
+
+	display: inline-block;
+	vertical-align: top;
+	min-height:100%;
+	padding:0;
+	height:100%;
+	
+}
+textarea{
+	
+	width:60%;
+	height: 120px;
+	border: 4px solid #fff;
+	padding:5px;
+	font-family: Tahoma;
+}
+#center{
+	
+    background: #000222;
+	background: -moz-linear-gradient(top,  #000222 0%, #4b637c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000222), color-stop(100%,#4b637c));
+	background: -webkit-linear-gradient(top,  #000222 0%,#4b637c 100%);
+	background: -o-linear-gradient(top,  #000222 0%,#4b637c 100%);
+	background: -ms-linear-gradient(top,  #000222 0%,#4b637c 100%);
+	background: linear-gradient(top,  #000222 0%,#4b637c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000222', endColorstr='#4b637c',GradientType=0 );
+	
+	
+	width:50%;
+	height:100%;
+	overflow:auto;
+	display: block;
+}
+
+fieldset{
+	width: 75%;
+}
+#convo{
+	background:	#000222;
+	color: #fff;
+	height:10px;
+}
+textarea{
+	width:95%;
+}
+#center2{
+	width:26%;
+	background:#fff;
+}
+#center3{
+	width:20%;
+	background:#000222;
+}
+#send{
+	
+	-moz-transition:0.5s;
+    -o-transition:0.5s;
+    -webkit-transition:0.5s;
+    background-color:#000000;
+    border:1px solid #000000;
+    color:#FFF;
+    display:block;
+    font-size:16px;
+    line-height:35px;
+    padding:5px 20px;
+    text-decoration:none;
+    transition:0.5s;
+	
+}    
+#send:hover{
+	background:#8CCA33;
+    border-color:#000000;
+    color:#fff;
+}
+.list{
+	 overflow:hidden;
+}
+#view{
+	font: bold 12px sans-serif;
+	overflow:hidden;
+}
+#delete{
+	font: bold 12px sans-serif;
+	overflow:hidden;
+}
+#delete_chat{
+	font: bold 12px sans-serif;
+	overflow:hidden;
+}
+a{
+	text-decoration:none;
+}
+#back{
+	font: bold 12px sans-serif;
+	overflow:hidden;
+	text-decoration:none;
+	
+}
+#manage_chat{
+	 overflow:hidden;
+
+	 font: bold 14px sans-serif;
+}
+#manage_patient{
+	 overflow:hidden;
+	
+	 font: bold 14px sans-serif;
+}
+h2{
+	color:#fff;
+}
+
+/*Chat screen table*/
+
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:300px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}

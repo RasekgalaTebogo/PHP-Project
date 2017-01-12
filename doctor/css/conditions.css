@@ -1,0 +1,16 @@
+h2{
+	text-align:center;
+	color:green;
+}
+#privacy{
+	padding-bottom:15px;
+}
+#terms{
+	color:red;
+}
+dt{
+	padding-bottom:15px;
+}
+dd{
+	padding:5px;
+}

@@ -1,0 +1,162 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+
+html{
+	-webkit-font-smoothing: antialiased;
+	background: #000222;
+	background: -moz-linear-gradient(top,  #000222 0%, #4b637c 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000222), color-stop(100%,#4b637c));
+	background: -webkit-linear-gradient(top,  #000222 0%,#4b637c 100%);
+	background: -o-linear-gradient(top,  #000222 0%,#4b637c 100%);
+	background: -ms-linear-gradient(top,  #000222 0%,#4b637c 100%);
+	background: linear-gradient(top,  #000222 0%,#4b637c 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000222', endColorstr='#4b637c',GradientType=0 );
+	height:100%;
+}
+
+
+body{
+	font:14px/1.3 'Segoe UI', 'Arial', sans-serif;
+}
+
+a, a:visited {
+	outline:none;
+	color:#1c4f64;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+section, footer, header{
+	display: block;
+}
+
+
+/*----------------------------
+	The Header
+-----------------------------*/
+
+
+h3{
+	font:bold 36px Cambria, "Hoefler Text",serif;
+	margin-bottom:50px;
+	color:#fff;
+	text-shadow:1px 1px 0 rgba(255,255,255,0.4);
+}
+
+
+/*----------------------------
+	The Form
+-----------------------------*/
+
+
+#main{
+	width:440px;
+	margin:80px auto 120px;
+	position:relative;
+	text-align:center;
+}
+
+#main form{
+	width:440px;
+	height:250px;
+	background:#fff;
+	padding-top: 50px;
+}
+
+#main form .row{
+	position:relative;
+}
+
+#main form .row.error:after,
+#main form .row.success:after{
+	content:'';
+	
+	position:absolute;
+	right: 60px;
+    top: 8px;
+	width:32px;
+	height:32px;
+	background:url('../image/icons.png') no-repeat;
+}
+
+#main form .row.error:after{
+	background-position: 0 -79px;
+}
+
+#main form input[type=text],
+#main form input[type=password]{
+
+	border:none;
+	background:url('../image/text-boxes.png') no-repeat top left;
+	font:14px 'Segoe UI','Arial',sans-serif;
+	color:#888;
+	
+	outline:none;
+	
+    height: 48px;
+    margin: 0 auto 22px;
+    padding: 0 10px 0 50px;
+    width: 278px;
+}
+
+
+
+#main form .pass input{
+	background-position:0 -96px;
+}
+
+#main form .pass input:focus{
+	background-position:0 -144px;
+}
+
+
+/*----------------------------
+	The Submit Button
+-----------------------------*/
+
+
+#main form input[type=submit]{
+	
+	border: 1px solid #004C9B;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.3);
+    color: #D3EBFF;
+    cursor: pointer;
+   
+    font: bold 24px Cambria,"Hoefler Text",serif;
+
+   
+    text-shadow: 0 -1px 0 #444444;
+    width: 310px;
+    
+	background-color:#0496DA;
+;
+}
+
+#main form input[type=submit]:hover{
+	
+	background-color:#0383d3;
+
+}
+
+#main form input[type=submit]:active{
+	
+	background-color:#026fcb;
+
+}
+
